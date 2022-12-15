@@ -3759,10 +3759,10 @@
   "resolved" "https://registry.npmjs.org/inherits/-/inherits-2.0.4.tgz"
   "version" "2.0.4"
 
-"inner_drawer@^0.0.2":
-  "integrity" "sha512-8haxGO8DTFRQg/3RtHbo8K/1xnXOzTF425nSJGJWEUs/hQmZeygD0H7Kw+uM44Adta7mECTH1SA7DYgOo1mPzg=="
-  "resolved" "https://registry.npmjs.org/inner_drawer/-/inner_drawer-0.0.2.tgz"
-  "version" "0.0.2"
+"inner_drawer@^0.1.1":
+  "integrity" "sha512-2ibsQB0YyXc3fzAyczkiEAqO0qHpCYERJ11ueMV3pUdQVylWWWV/ia4IWOYuznesXR6wewlFFwIpfnTF0etWrA=="
+  "resolved" "https://registry.npmjs.org/inner_drawer/-/inner_drawer-0.1.1.tgz"
+  "version" "0.1.1"
   dependencies:
     "@react-navigation/native" "^6.1.1"
     "@react-navigation/native-stack" "^6.9.6"
