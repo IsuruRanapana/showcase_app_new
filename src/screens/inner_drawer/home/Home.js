@@ -3,10 +3,9 @@
 // ***   on 12/15/2022 => 2:59 PM  *** //
 
 
-
 import {Text, View} from 'react-native';
 
-export default function Profile({navigation}){
+export default function Home({navigation}) {
     return (
         <View>
             <Text style={{
@@ -14,7 +13,7 @@ export default function Profile({navigation}){
                 fontWeight: 'bold',
                 color: 'black',
                 paddingTop: 20,
-            }}>{"Profile"}</Text>
+            }}>{'Home'}</Text>
         </View>
-    )
+    );
 }

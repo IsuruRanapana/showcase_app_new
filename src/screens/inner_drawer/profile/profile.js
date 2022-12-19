@@ -5,9 +5,9 @@
 
 
 import {Image, Text, View} from 'react-native';
-import images from '../../../assets/images';
+import images from '../../../../assets/images';
 
-export default function Home({navigation}){
+export default function Profile({navigation}){
     return (
         <View>
             <Text style={{
@@ -15,8 +15,7 @@ export default function Home({navigation}){
                 fontWeight: 'bold',
                 color: 'black',
                 paddingTop: 20,
-            }}>{"Home"}</Text>
-
+            }}>{"Profile"}</Text>
             <Image source={images.photo} style={{
                 width: '100%',
                 height: 300,

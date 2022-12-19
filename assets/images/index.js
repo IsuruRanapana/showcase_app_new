@@ -11,6 +11,7 @@ import icSearch from './ic_search.png';
 import icSettings from './ic_settings.png';
 import photo from './photo.jpg';
 import profile from './profile.png';
+import icGrid from './ic_grid.png';
 
 export default {
     icBell,
@@ -22,4 +23,5 @@ export default {
     icSearch,
     profile,
     photo,
+    icGrid,
 }
