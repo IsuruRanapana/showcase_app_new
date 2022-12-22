@@ -125,10 +125,10 @@ export default function VoiceCommand(){
             <Text style={styles.instructions}>
                 {'Press the button and start \n speaking.'}
             </Text>
-            <Text style={styles.stat}>{`Started: ${started}`}</Text>
-            <Text style={styles.stat}>{`Recognized: ${recognized}`}</Text>
-            <Text style={styles.stat}>{`Volume: ${volume}`}</Text>
-            <Text style={styles.stat}>{`Error: ${error}`}</Text>
+            {/*<Text style={styles.stat}>{`Started: ${started}`}</Text>*/}
+            {/*<Text style={styles.stat}>{`Recognized: ${recognized}`}</Text>*/}
+            {/*<Text style={styles.stat}>{`Volume: ${volume}`}</Text>*/}
+            {/*<Text style={styles.stat}>{`Error: ${error}`}</Text>*/}
             <Text style={styles.stat}>Results</Text>
             {results.map((result, index) => {
                 return (
@@ -145,7 +145,7 @@ export default function VoiceCommand(){
                     </Text>
                 );
             })}
-            <Text style={styles.stat}>{`End: ${end}`}</Text>
+            {/*<Text style={styles.stat}>{`End: ${end}`}</Text>*/}
             {!started ?<TouchableHighlight onPress={_startRecognizing} style={{backgroundColor:'#1065C0', padding:10, borderRadius:30,margin:20,marginTop:300}}>
                 <IcMic/>
             </TouchableHighlight>:
