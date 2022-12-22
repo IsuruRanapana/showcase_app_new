@@ -6,9 +6,11 @@
 import CustomNavigationBar from './appbar/CustomNavigationBar';
 import ListTile from './listTile/ListTile'
 import CarouselCard from './carouselCard/CarouselCard';
+// import IcForward from './svgs/IcForward';
 
 export {
     CustomNavigationBar,
     ListTile,
-    CarouselCard
+    CarouselCard,
+    // IcForward
 }

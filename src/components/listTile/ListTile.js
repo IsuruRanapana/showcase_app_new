@@ -23,7 +23,9 @@ export default function ListTile({item, navigation}) {
             case StringUtils.VOICE_COMMAND:
                 navigation.navigate('VOICE_COMMAND');
                 break;
-
+            case StringUtils.ON_BOARDING:
+                navigation.navigate('ON_BOARDING');
+                break;
         }
     };
     return (
