@@ -12,6 +12,7 @@ import icSettings from './ic_settings.png';
 import photo from './photo.jpg';
 import profile from './profile.png';
 import icGrid from './ic_grid.png';
+import icMic from './ic_mic.png';
 
 export default {
     icBell,
@@ -24,4 +25,5 @@ export default {
     profile,
     photo,
     icGrid,
+    icMic
 }

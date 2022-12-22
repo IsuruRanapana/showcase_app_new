@@ -35,6 +35,12 @@ const gridViewItems = [
     {
         title: StringUtils.FANCY_BOTTOM_NAVIGATION,
     },
+    {
+        title: StringUtils.STANDARD_DRAWER_NAVIGATION,
+    },
+    {
+        title: StringUtils.VOICE_COMMAND,
+    },
 ];
 
 export default gridViewItems;

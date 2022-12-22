@@ -10,6 +10,8 @@ import Search from './inner_drawer/search/Search';
 import Dashboard from './dashboard/Dashboard';
 import DrawerScreen from './inner_drawer/DrawerScreen';
 import ImageSlider from './image_slider/ImageSlider';
+import StandardDrawer from './standard_drawer/StandardDrawer';
+import VoiceCommand from './voice_command/VoiceCommand';
 
 export {
     Home,
@@ -18,5 +20,7 @@ export {
     Search,
     Dashboard,
     DrawerScreen,
-    ImageSlider
+    ImageSlider,
+    StandardDrawer,
+    VoiceCommand,
 }

@@ -3,10 +3,11 @@
 // ***   on 12/19/2022 => 11:18 AM  *** //
 
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import {Dashboard, DrawerScreen, ImageSlider} from '../screens';
+import {Dashboard, DrawerScreen, ImageSlider, StandardDrawer, VoiceCommand} from '../screens';
 import {CustomNavigationBar} from '../components';
 
 const Stack = createNativeStackNavigator();
+
 
 export default function DashboardNavigator() {
     return (
@@ -43,6 +44,24 @@ export default function DashboardNavigator() {
                             title={'Image Slider'}
                             {...props}
                         />,
+                    }
+                }
+            />
+            <Stack.Screen
+                name={'STANDARD_DRAWER'}
+                component={StandardDrawer}
+                options={
+                    {
+                        headerShown: false
+                    }
+                }
+            />
+            <Stack.Screen
+                name={'VOICE_COMMAND'}
+                component={VoiceCommand}
+                options={
+                    {
+                        headerShown: false
                     }
                 }
             />

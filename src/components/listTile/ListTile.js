@@ -16,6 +16,13 @@ export default function ListTile({item, navigation}) {
                 break;
             case StringUtils.ANIMATED_DRAWER:
                 navigation.navigate('DRAWER_SCREEN');
+                break;
+            case StringUtils.STANDARD_DRAWER_NAVIGATION:
+                navigation.navigate('STANDARD_DRAWER');
+                break;
+            case StringUtils.VOICE_COMMAND:
+                navigation.navigate('VOICE_COMMAND');
+                break;
 
         }
     };
