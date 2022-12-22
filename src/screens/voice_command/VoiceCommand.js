@@ -12,14 +12,16 @@ import Voice, {
 import styles from './VoiceCommand.styles'
 import {Image, Text, TouchableHighlight, View} from 'react-native';
 import images from '../../../assets/images';
+import IcMic from '../../components/svgs/IcMic';
+import IcPause from '../../components/svgs/IcPause';
 
 
 export default function VoiceCommand(){
     const [recognized, setRecognized] = useState('');
     const [volume, setVolume] = useState('');
     const [error, setError] = useState('');
-    const [end, setEnd] = useState('');
-    const [started, setStarted] = useState('');
+    const [end, setEnd] = useState(false);
+    const [started, setStarted] = useState(false);
     const [results, setResults] = useState([]);
     const [partialResults, setPartialResults] = useState([]);
 
@@ -38,7 +40,7 @@ export default function VoiceCommand(){
     }, []);
     const onSpeechStart = (e: any) => {
         console.log('onSpeechStart: ', e);
-        setStarted('√');
+        setStarted(true);
     };
 
     const onSpeechRecognized = (e: SpeechRecognizedEvent) => {
@@ -48,7 +50,7 @@ export default function VoiceCommand(){
 
     const onSpeechEnd = (e: any) => {
         console.log('onSpeechEnd: ', e);
-        setEnd('√');
+        setEnd(true);
     };
 
     const onSpeechError = (e: SpeechErrorEvent) => {
@@ -120,9 +122,8 @@ export default function VoiceCommand(){
 
     return (
         <View style={styles.container}>
-            <Text style={styles.welcome}>Welcome to React Native Voice!</Text>
             <Text style={styles.instructions}>
-                Press the button and start speaking.
+                {'Press the button and start \n speaking.'}
             </Text>
             <Text style={styles.stat}>{`Started: ${started}`}</Text>
             <Text style={styles.stat}>{`Recognized: ${recognized}`}</Text>
@@ -145,18 +146,18 @@ export default function VoiceCommand(){
                 );
             })}
             <Text style={styles.stat}>{`End: ${end}`}</Text>
-            <TouchableHighlight onPress={_startRecognizing}>
-                <Image style={styles.button} source={images.icMic} />
-            </TouchableHighlight>
-            <TouchableHighlight onPress={_stopRecognizing}>
-                <Text style={styles.action}>Stop Recognizing</Text>
-            </TouchableHighlight>
-            <TouchableHighlight onPress={_cancelRecognizing}>
-                <Text style={styles.action}>Cancel</Text>
-            </TouchableHighlight>
-            <TouchableHighlight onPress={_destroyRecognizer}>
-                <Text style={styles.action}>Destroy</Text>
-            </TouchableHighlight>
+            {!started ?<TouchableHighlight onPress={_startRecognizing} style={{backgroundColor:'#1065C0', padding:10, borderRadius:30,margin:20,marginTop:300}}>
+                <IcMic/>
+            </TouchableHighlight>:
+            <TouchableHighlight onPress={_stopRecognizing} style={{backgroundColor:'#420C09', padding:10, borderRadius:30,margin:20}}>
+                <IcPause/>
+            </TouchableHighlight>}
+            {/*<TouchableHighlight onPress={_cancelRecognizing}>*/}
+            {/*    <Text style={styles.action}>Cancel</Text>*/}
+            {/*</TouchableHighlight>*/}
+            {/*<TouchableHighlight onPress={_destroyRecognizer}>*/}
+            {/*    <Text style={styles.action}>Destroy</Text>*/}
+            {/*</TouchableHighlight>*/}
         </View>
     );
 }

@@ -31,7 +31,7 @@ export default function DashboardNavigator() {
                 component={DrawerScreen}
                 options={
                     {
-                        headerShown: false
+                        headerShown: false,
                     }
                 }
             />
@@ -52,7 +52,7 @@ export default function DashboardNavigator() {
                 component={StandardDrawer}
                 options={
                     {
-                        headerShown: false
+                        headerShown: false,
                     }
                 }
             />
@@ -61,7 +61,10 @@ export default function DashboardNavigator() {
                 component={VoiceCommand}
                 options={
                     {
-                        headerShown: false
+                        header: (props) => <CustomNavigationBar
+                            title={'Speech to Text'}
+                            {...props}
+                        />,
                     }
                 }
             />
@@ -70,7 +73,7 @@ export default function DashboardNavigator() {
                 component={OnBoarding}
                 options={
                     {
-                        headerShown: false
+                        headerShown: false,
                     }
                 }
             />
