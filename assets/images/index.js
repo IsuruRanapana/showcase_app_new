@@ -13,6 +13,10 @@ import photo from './photo.jpg';
 import profile from './profile.png';
 import icGrid from './ic_grid.png';
 import icMic from './ic_mic.png';
+import intro01 from './intro_01.webp';
+import intro02 from './intro_02.png';
+import intro03 from './intro_03.png';
+import intro04 from './intro_04.png';
 
 export default {
     icBell,
@@ -25,5 +29,9 @@ export default {
     profile,
     photo,
     icGrid,
-    icMic
+    icMic,
+    intro01,
+    intro02,
+    intro03,
+    intro04
 }

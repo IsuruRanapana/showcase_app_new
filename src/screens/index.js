@@ -12,6 +12,7 @@ import DrawerScreen from './inner_drawer/DrawerScreen';
 import ImageSlider from './image_slider/ImageSlider';
 import StandardDrawer from './standard_drawer/StandardDrawer';
 import VoiceCommand from './voice_command/VoiceCommand';
+import OnBoarding from './on_boarding/OnBoarding';
 
 export {
     Home,
@@ -23,4 +24,5 @@ export {
     ImageSlider,
     StandardDrawer,
     VoiceCommand,
+    OnBoarding,
 }

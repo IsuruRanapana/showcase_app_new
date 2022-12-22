@@ -41,6 +41,9 @@ const gridViewItems = [
     {
         title: StringUtils.VOICE_COMMAND,
     },
+    {
+        title: StringUtils.ON_BOARDING,
+    },
 ];
 
 export default gridViewItems;
