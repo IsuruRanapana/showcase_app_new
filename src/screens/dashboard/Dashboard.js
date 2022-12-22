@@ -16,7 +16,7 @@ export default function Dashboard({navigation}){
         );
     };
     return (
-        <View>
+        <View style={{backgroundColor:'white'}}>
             <View style={styles.flatList}>
                 <FlatList
                     data={gridViewItems}
