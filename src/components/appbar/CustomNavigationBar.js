@@ -14,7 +14,7 @@ export default function CustomNavigationBar({navigation, back, title, isDrawer=f
     };
     return (
         <Appbar.Header style={{backgroundColor: '#c06c84',}}>
-            {back ? <Appbar.BackAction onPress={navigation.goBack} /> : null}
+            {back ? <Appbar.BackAction onPress={navigation.goBack} color={'white'}/> : null}
             {isDrawer?<TouchableOpacity style={{
                 position:'absolute',
                 top: 20,
@@ -26,7 +26,7 @@ export default function CustomNavigationBar({navigation, back, title, isDrawer=f
 
 
             }}></Image></TouchableOpacity>:<></>}
-            <Appbar.Content titleStyle={{textAlign: 'center'}} title={<Text style={{color:'white'}}>{title}</Text>}></Appbar.Content>
+            <Appbar.Content titleStyle={{textAlign: 'center',marginRight:back?40:0}} title={<Text style={{color:'white'}}>{title}</Text>}></Appbar.Content>
         </Appbar.Header>
     );
 }
