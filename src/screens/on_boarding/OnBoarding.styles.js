@@ -20,7 +20,7 @@ export default styles = StyleSheet.create({
         fontSize: 20,
         color: 'black',
         textAlign: 'center',
-        marginTop: 30
+        marginTop: 30,
     },
     title: {
         fontSize: 28,
@@ -37,5 +37,16 @@ export default styles = StyleSheet.create({
         borderRadius: 20,
         justifyContent: 'center',
         alignItems: 'center',
+    },
+    skipButton: {
+        padding: 5,
+        width: 60,
+        alignItems: 'center',
+        justifyContent: 'center',
+        marginTop: 5,
+    },
+    skipText: {
+        color: 'black',
+        fontSize: 14,
     },
 });

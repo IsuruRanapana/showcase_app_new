@@ -45,8 +45,8 @@ export default function OnBoarding() {
     }
     const renderSkipButton = ()=>{
         return (
-            <View>
-                <Text style={{color:'black'}}>{'Skip'}</Text>
+            <View style={styles.skipButton}>
+                <Text style={styles.skipText}>{'Skip'}</Text>
             </View>
         );
     }
@@ -57,10 +57,10 @@ export default function OnBoarding() {
             renderNextButton={renderNextButton}
             renderPrevButton={renderBackButton}
             renderItem={renderItems}
-            // showPrevButton={true}
-            // skipLabel={'Skip'}
-            showSkipButton={true}
-            renderSkipButton={renderSkipButton}
+            showPrevButton={true}
+            skipLabel={'Skip'}
+            // showSkipButton={true}
+            // renderSkipButton={renderSkipButton}
         />
 
     );
