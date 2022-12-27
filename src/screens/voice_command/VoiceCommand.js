@@ -14,9 +14,13 @@ import {Image, Text, TouchableHighlight, View} from 'react-native';
 import images from '../../../assets/images';
 import IcMic from '../../components/svgs/IcMic';
 import IcPause from '../../components/svgs/IcPause';
+import {useSelector, useDispatch} from 'react-redux';
+import {openYoutube} from '../../features/voice_command/voiceCommandSlice';
 
 
 export default function VoiceCommand(){
+    const voiceCommander = useSelector(state=>state.voiceCommander);
+    const dispatch = useDispatch()
     const [recognized, setRecognized] = useState('');
     const [volume, setVolume] = useState('');
     const [error, setError] = useState('');
@@ -38,6 +42,14 @@ export default function VoiceCommand(){
             Voice.destroy().then(Voice.removeAllListeners);
         };
     }, []);
+
+    const handleInput = (input) => {
+        switch (input){
+            case 'go to youtube.com':
+                dispatch(openYoutube({linkedFeature:'youtube'}));
+                break;
+        }
+    }
     const onSpeechStart = (e: any) => {
         console.log('onSpeechStart: ', e);
         setStarted(true);
@@ -60,6 +72,7 @@ export default function VoiceCommand(){
 
     const onSpeechResults = (e: SpeechResultsEvent) => {
         console.log('onSpeechResults: ', e);
+        handleInput(e.value);
         setResults(e.value);
     };
 
