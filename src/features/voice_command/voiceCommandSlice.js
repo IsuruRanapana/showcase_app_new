@@ -26,5 +26,5 @@ export const voiceCommandSlice = createSlice({
     }
 });
 
-export const {openMap, openYoutube} = voiceCommandSlice.actions;
+export const {openMap, openYoutube, sendMail} = voiceCommandSlice.actions;
 export default voiceCommandSlice.reducer;

@@ -3,19 +3,19 @@
 // ***   on 12/21/2022 => 3:29 PM  *** //
 
 
-import {useEffect, useState} from 'react';
+import {useCallback, useEffect, useState} from 'react';
 import Voice, {
     SpeechRecognizedEvent,
     SpeechResultsEvent,
     SpeechErrorEvent,
 } from '@react-native-voice/voice';
 import styles from './VoiceCommand.styles'
-import {Image, Text, TouchableHighlight, View} from 'react-native';
+import {Alert, Image, Linking, Text, TouchableHighlight, View} from 'react-native';
 import images from '../../../assets/images';
 import IcMic from '../../components/svgs/IcMic';
 import IcPause from '../../components/svgs/IcPause';
 import {useSelector, useDispatch} from 'react-redux';
-import {openYoutube} from '../../features/voice_command/voiceCommandSlice';
+import {openYoutube, sendMail} from '../../features/voice_command/voiceCommandSlice';
 
 
 export default function VoiceCommand(){
@@ -28,6 +28,7 @@ export default function VoiceCommand(){
     const [started, setStarted] = useState(false);
     const [results, setResults] = useState([]);
     const [partialResults, setPartialResults] = useState([]);
+    let url ='';
 
     useEffect(() => {
         Voice.onSpeechStart = onSpeechStart;
@@ -43,11 +44,35 @@ export default function VoiceCommand(){
         };
     }, []);
 
+    const sendEmail = useCallback(
+        async () => {
+            const isSupported = await Linking.canOpenURL(url);
+            if(isSupported){
+                await Linking.openURL(url);
+            }else{
+                Alert.alert(`Don't know how to open this URL: ${url}`);
+            }
+
+        },
+        [url],
+    );
+
+    const openYoutubeApp = ()=>{
+        Linking.openURL('https://www.youtube.com/').then(r =>console.log('youtube')) ;
+
+    }
+
     const handleInput = (input) => {
         switch (input){
             case 'go to youtube.com':
                 dispatch(openYoutube({linkedFeature:'youtube'}));
+                openYoutubeApp();
                 break;
+            case 'send email':
+                dispatch(sendMail({linkedFeature:'email'}));
+                sendEmail().then(r => console.log('a'));
+                break;
+
         }
     }
     const onSpeechStart = (e: any) => {
