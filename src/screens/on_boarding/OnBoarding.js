@@ -7,9 +7,9 @@ import {Image, Text, View} from 'react-native';
 import styles from './OnBoarding.styles';
 import AppIntroSlider from 'react-native-app-intro-slider';
 import onBoardingItems from '../../mocks/onBoardingSlidesMock';
-import IcForward from '../../components/svgs/IcForward';
-import IcBack from '../../components/svgs/IcBack';
-import IcCheck from '../../components/svgs/IcCheck';
+import IcForward from '../../components/assets/svgs/IcForward';
+import IcBack from '../../components/assets/svgs/IcBack';
+import IcCheck from '../../components/assets/svgs/IcCheck';
 
 export default function OnBoarding() {
     const renderItems = ({item}) => {

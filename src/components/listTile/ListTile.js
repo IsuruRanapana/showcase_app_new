@@ -26,6 +26,9 @@ export default function ListTile({item, navigation}) {
             case StringUtils.ON_BOARDING:
                 navigation.navigate('ON_BOARDING');
                 break;
+            case StringUtils.BOTTOM_TAB_NAVIGATOR:
+                navigation.navigate('BOTTOM_TAB_NAVIGATOR');
+                break;
         }
     };
     return (

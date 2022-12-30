@@ -3,7 +3,15 @@
 // ***   on 12/19/2022 => 11:18 AM  *** //
 
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import {Dashboard, DrawerScreen, ImageSlider, OnBoarding, StandardDrawer, VoiceCommand} from '../screens';
+import {
+    BottomTabNavigator,
+    Dashboard,
+    DrawerScreen,
+    ImageSlider,
+    OnBoarding,
+    StandardDrawer,
+    VoiceCommand,
+} from '../screens';
 import {CustomNavigationBar} from '../components';
 
 const Stack = createNativeStackNavigator();
@@ -71,6 +79,15 @@ export default function DashboardNavigator() {
             <Stack.Screen
                 name={'ON_BOARDING'}
                 component={OnBoarding}
+                options={
+                    {
+                        headerShown: false,
+                    }
+                }
+            />
+            <Stack.Screen
+                name={'BOTTOM_TAB_NAVIGATOR'}
+                component={BottomTabNavigator}
                 options={
                     {
                         headerShown: false,

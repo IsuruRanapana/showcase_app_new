@@ -12,8 +12,8 @@ import Voice, {
 import styles from './VoiceCommand.styles'
 import {Alert, Image, Linking, Text, TouchableHighlight, View} from 'react-native';
 import images from '../../../assets/images';
-import IcMic from '../../components/svgs/IcMic';
-import IcPause from '../../components/svgs/IcPause';
+import IcMic from '../../components/assets/svgs/IcMic';
+import IcPause from '../../components/assets/svgs/IcPause';
 import {useSelector, useDispatch} from 'react-redux';
 import {openYoutube, sendMail} from '../../features/voice_command/voiceCommandSlice';
 

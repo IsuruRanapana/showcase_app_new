@@ -44,6 +44,9 @@ const gridViewItems = [
     {
         title: StringUtils.ON_BOARDING,
     },
+    {
+        title: StringUtils.BOTTOM_TAB_NAVIGATOR,
+    },
 ];
 
 export default gridViewItems;

@@ -13,6 +13,10 @@ import ImageSlider from './image_slider/ImageSlider';
 import StandardDrawer from './standard_drawer/StandardDrawer';
 import VoiceCommand from './voice_command/VoiceCommand';
 import OnBoarding from './on_boarding/OnBoarding';
+import Chat from './inner_drawer/chat/Chat';
+import Upload from './inner_drawer/upload/Upload';
+import Settings from './inner_drawer/settings/Settings';
+import BottomTabNavigator from './bottom_tab_navigator/BottomTabNavigator';
 
 export {
     Home,
@@ -25,4 +29,8 @@ export {
     StandardDrawer,
     VoiceCommand,
     OnBoarding,
+    Chat,
+    Upload,
+    Settings,
+    BottomTabNavigator
 }
