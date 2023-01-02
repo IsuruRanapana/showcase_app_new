@@ -6,9 +6,11 @@
 import CustomNavigationBar from './appbar/CustomNavigationBar';
 import ListTile from './listTile/ListTile'
 import CarouselCard from './carouselCard/CarouselCard';
+import BottomSheet from './bottomSheet/BottomSheet';
 
 export {
     CustomNavigationBar,
     ListTile,
     CarouselCard,
+    BottomSheet,
 }

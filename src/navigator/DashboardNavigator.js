@@ -4,6 +4,7 @@
 
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {
+    BottomSheetScreen,
     BottomTabNavigator,
     Dashboard,
     DrawerScreen,
@@ -88,6 +89,15 @@ export default function DashboardNavigator() {
             <Stack.Screen
                 name={'BOTTOM_TAB_NAVIGATOR'}
                 component={BottomTabNavigator}
+                options={
+                    {
+                        headerShown: false,
+                    }
+                }
+            />
+            <Stack.Screen
+                name={'BOTTOM_SHEET_SCREEN'}
+                component={BottomSheetScreen}
                 options={
                     {
                         headerShown: false,

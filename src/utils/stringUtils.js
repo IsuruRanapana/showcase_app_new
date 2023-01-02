@@ -17,6 +17,7 @@ const StringUtils = {
     VOICE_COMMAND:'VOICE COMMAND',
     ON_BOARDING:'ON BOARDING',
     BOTTOM_TAB_NAVIGATOR:'BOTTOM TAB NAVIGATOR',
+    BOTTOM_SHEET:'BOTTOM SHEET',
 };
 
 export default StringUtils;

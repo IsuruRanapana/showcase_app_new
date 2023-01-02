@@ -17,6 +17,7 @@ import Chat from './inner_drawer/chat/Chat';
 import Upload from './inner_drawer/upload/Upload';
 import Settings from './inner_drawer/settings/Settings';
 import BottomTabNavigator from './bottom_tab_navigator/BottomTabNavigator';
+import BottomSheetScreen from './bottom_sheet_screen/BottomSheetScreen';
 
 export {
     Home,
@@ -32,5 +33,6 @@ export {
     Chat,
     Upload,
     Settings,
-    BottomTabNavigator
+    BottomTabNavigator,
+    BottomSheetScreen,
 }

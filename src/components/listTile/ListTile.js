@@ -29,6 +29,9 @@ export default function ListTile({item, navigation}) {
             case StringUtils.BOTTOM_TAB_NAVIGATOR:
                 navigation.navigate('BOTTOM_TAB_NAVIGATOR');
                 break;
+            case StringUtils.BOTTOM_SHEET:
+                navigation.navigate('BOTTOM_SHEET_SCREEN');
+                break;
         }
     };
     return (
