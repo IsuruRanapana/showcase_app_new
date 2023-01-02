@@ -63,8 +63,10 @@ export default function VoiceCommand(){
     }
 
     const handleInput = (input) => {
-        switch (input){
-            case 'go to youtube.com':
+        console.log(input[0].toLowerCase());
+        switch (input[0].toLowerCase()){
+            case 'go to youtube':
+                console.log(input)
                 dispatch(openYoutube({linkedFeature:'youtube'}));
                 openYoutubeApp();
                 break;
