@@ -36,7 +36,7 @@ export default function ListTile({item, navigation}) {
     };
     return (
         <TouchableOpacity onPress={handleOnPress}>
-            <View style={styles.container}>
+            <View style={item.done?styles.container:{...styles.container,opacity:0.4}}>
                 <View style={styles.content}>
                     <Image source={images.icGrid} style={styles.image}/>
                     <Text style={styles.title}>{item.title}</Text>

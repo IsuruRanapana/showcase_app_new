@@ -6,50 +6,70 @@ import StringUtils from '../utils/stringUtils';
 
 const gridViewItems = [
     {
+        title: StringUtils.ON_BOARDING,
+        done: true,
+    },
+    {
         title: StringUtils.IMAGE_SLIDER,
-    },
-    {
-        title: StringUtils.CUSTOM_PAINTER,
-    },
-    {
-        title: StringUtils.IMAGE_PICKER,
-    },
-    {
-        title: StringUtils.ANIMATION,
-    },
-    {
-        title: StringUtils.BIOMETRICS,
+        done: true,
     },
     {
         title: StringUtils.ANIMATED_DRAWER,
-    },
-    {
-        title: StringUtils.BOTTOM_NAVIGATION,
-    },
-    {
-        title: StringUtils.ANIMATED_BOTTOM_NAVIGATION,
-    },
-    {
-        title: StringUtils.SCROLL_BOTTOM_NAVIGATION,
-    },
-    {
-        title: StringUtils.FANCY_BOTTOM_NAVIGATION,
+        done: true,
     },
     {
         title: StringUtils.STANDARD_DRAWER_NAVIGATION,
+        done: true,
     },
     {
         title: StringUtils.VOICE_COMMAND,
+        done: true,
     },
-    {
-        title: StringUtils.ON_BOARDING,
-    },
+
     {
         title: StringUtils.BOTTOM_TAB_NAVIGATOR,
+        done: true,
     },
     {
         title: StringUtils.BOTTOM_SHEET,
+        done: true,
     },
+    {
+        title: StringUtils.ANIMATED_BOTTOM_NAVIGATION,
+        done: false,
+    },
+
+    {
+        title: StringUtils.BOTTOM_NAVIGATION,
+        done: false,
+    },
+
+    {
+        title: StringUtils.CUSTOM_PAINTER,
+        done: false,
+    },
+    {
+        title: StringUtils.IMAGE_PICKER,
+        done: false,
+    },
+    {
+        title: StringUtils.ANIMATION,
+        done: false,
+    },
+    {
+        title: StringUtils.BIOMETRICS,
+        done: false,
+    },
+
+    {
+        title: StringUtils.SCROLL_BOTTOM_NAVIGATION,
+        done: false,
+    },
+    {
+        title: StringUtils.FANCY_BOTTOM_NAVIGATION,
+        done: false,
+    },
+
 ];
 
 export default gridViewItems;

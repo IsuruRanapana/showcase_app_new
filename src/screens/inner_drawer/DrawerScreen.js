@@ -25,7 +25,7 @@ export default function DrawerScreen({navigation}) {
                 logoutButtonOnPress={() => {
                     navigation.goBack();
                 }}
-                isLogoutButton={true}
+                isLogoutButton={false}
                 drawerBackgroundStyles={{backgroundColor:'#c06c84'}}
                 tabButtonEnabledTextColor={'#c06c84'}
                 tabButtonDisabledTextColor={'white'}
@@ -49,7 +49,7 @@ export default function DrawerScreen({navigation}) {
                         image: images.icSettings,
                     },
                     {
-                        title: 'search',
+                        title: 'Search',
                         image: images.icSearch,
                     },
                 ]}

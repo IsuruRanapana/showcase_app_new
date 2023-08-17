@@ -169,22 +169,22 @@ export default function VoiceCommand(){
             {/*<Text style={styles.stat}>{`Recognized: ${recognized}`}</Text>*/}
             {/*<Text style={styles.stat}>{`Volume: ${volume}`}</Text>*/}
             {/*<Text style={styles.stat}>{`Error: ${error}`}</Text>*/}
-            <Text style={styles.stat}>Results</Text>
-            {results.map((result, index) => {
-                return (
-                    <Text key={`result-${index}`} style={styles.stat}>
-                        {result}
-                    </Text>
-                );
-            })}
-            <Text style={styles.stat}>Partial Results</Text>
-            {partialResults.map((result, index) => {
-                return (
-                    <Text key={`partial-result-${index}`} style={styles.stat}>
-                        {result}
-                    </Text>
-                );
-            })}
+            {/*<Text style={styles.stat}>Results</Text>*/}
+            {/*{results.map((result, index) => {*/}
+            {/*    return (*/}
+            {/*        <Text key={`result-${index}`} style={styles.stat}>*/}
+            {/*            {result}*/}
+            {/*        </Text>*/}
+            {/*    );*/}
+            {/*})}*/}
+            {/*<Text style={styles.stat}>Partial Results</Text>*/}
+            {/*{partialResults.map((result, index) => {*/}
+            {/*    return (*/}
+            {/*        <Text key={`partial-result-${index}`} style={styles.stat}>*/}
+            {/*            {result}*/}
+            {/*        </Text>*/}
+            {/*    );*/}
+            {/*})}*/}
             {/*<Text style={styles.stat}>{`End: ${end}`}</Text>*/}
             {!started ?<TouchableHighlight onPress={_startRecognizing} style={{backgroundColor:'#1065C0', padding:10, borderRadius:30,margin:20,marginTop:300}}>
                 <IcMic/>

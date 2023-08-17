@@ -59,6 +59,7 @@ export default function OnBoarding() {
             renderItem={renderItems}
             showPrevButton={true}
             skipLabel={'Skip'}
+            activeDotStyle={{backgroundColor:'black'}}
             // showSkipButton={true}
             // renderSkipButton={renderSkipButton}
         />
